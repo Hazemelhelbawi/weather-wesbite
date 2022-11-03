@@ -1,0 +1,75 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Ubuntu', sans-serif;
+
+}
+#dataSearchWeather{
+    background-image: url(../img/img/bg.jpg);
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    /* background-color: #9b9b9b; */
+}
+.inner-item{
+    border-radius: 10px;
+}
+
+#degreeToday{
+    font-size: 60px;
+    padding-bottom: 30px;
+
+}
+#todayIcon{
+    font-size: 30px;
+}
+.footer{
+    font-size: 16px;
+}
+.headerWeather{
+    padding-bottom: 10px;
+
+}
+.headerHome h1{
+    font-size: 60px;
+}
+
+#loading{
+    position: fixed;
+    inset: 0;
+    background-color: rgb(6, 102, 140);
+    z-index: 999999999999999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+body{
+    overflow: hidden;
+
+}
+.navbar{
+    padding: 0 30px;
+}
+
+.head-title {
+    font-size: 16px;
+}
+
+
+@media screen and (max-height: 450px) {
+    .w-50{
+        width:100%;
+    }
+    input {
+        width:100% ;
+    }
+    #footer h5{
+        width: 80%;
+    }
+
+
+}

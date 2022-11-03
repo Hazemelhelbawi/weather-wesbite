@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weather</title>
+    <link rel="shortcut icon" href="img/img/thunderstorm-g82ca61f7c_640.png" type="image/x-icon">   
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya&family=Alegreya+Sans&family=Clicker+Script&family=Jost:wght@400;500&family=Oswald&family=Poppins:wght@400;600;700&family=Source+Sans+Pro&family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="loading">
+    <i class="fa fa-spinner fa-spin fa-5x text-info"></i>
+  </div>
+    <section>
+    <!-- <nav class=" bg-dark text-danger ">
+        <div class="container-fluid py-3">
+          <div class="d-flex justify-content-around">
+            <div class="nav-title d-flex  ">
+              <img class="img-fluid " src="image/logo.png" alt="">
+              <div class="head-title px-2">
+            <span class="d-block fw-bolder">Weather</span>
+            <span class="smTitle">tagline goes here</span>
+          </div>
+          </div>
+            <ul class=" list-unstyled d-flex my-auto">
+              <li class="nav-item px-4 ">
+                <a class="nav-link active" href="#">Home</a>
+              </li>
+              <li class="nav-item px-4 ">
+                <a class="nav-link" href="#dataSearchWeather">Search Weather</a>
+              </li>
+              <li class="nav-item px-4 ">
+                <a class="nav-link" href="#footer">Contact us</a>
+              </li>
+              <li class="nav-item px-4 ">
+                <a class="nav-link" target="_blank" href="https://www.google.com/search?q=weather+photos&sxsrf=ALiCzsYDjKi6ntsTVZcMb5rhFcWjuONHXg:1666812417994&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjapdOQ0P76AhUFhc4BHZZ8B-4Q_AUoAXoECAIQAw&biw=1366&bih=657&dpr=1">Photos</a>
+              </li>
+
+  
+            </ul>
+          </div>
+        </div>
+      </nav> -->
+
+      <nav class="navbar navbar-dark bg-dark navbar-expand-lg ">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <div class="d-felx nav-title">
+              <img class="img-fluid " src="image/logo.png" alt="">
+              <div class="head-title px-2">
+            <span class="d-block fw-bolder">Weather</span>
+            <span class="smTitle">tagline goes here</span>
+
+            </div>
+            </div>
+
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#dataSearchWeather">Search Weather</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#footer">Contact us</a>
+              </li>
+
+            </ul>
+
+          </div>
+        </div>
+      </nav>
+   </section>
+
+
+   <section>
+    <div class="container">
+        <div class="headerHome text-center py-4">
+            <h1 class="fw-bolder text-danger ">WEATHER WEBSITE</h1>
+            <h3 class="text-secondary">What's the weather like today ? <i class="fa-solid fa-cloud-bolt fa-fade text-danger"></i></h3>
+        </div>
+        <div class="row pt-3">
+            <div class="col-md-6">
+                <div class="inner-image">
+                    <img src="img/img/thunderstorm-g82ca61f7c_640.png" class="w-75" alt="">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="inner-data pt-5">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem doloremque nesciunt fugit dolorem accusamus placeat reiciendis blanditiis porro velit sunt incidunt ullam dicta dolorum repudiandae quae reprehenderit sapiente odio, dolor possimus debitis. Corporis ipsam hic odit, incidunt cupiditate beatae sit esse? Unde nulla error atque, dolorum provident delectus? Atque, nostrum?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium est sint possimus. Harum perferendis esse aut dolorum, dicta sint in!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+   </section>
+   <section id="dataSearchWeather">
+    <div class="container pb-5">
+        <div class="searchData pt-5">
+            <div class="searchCountry  w-75 mx-auto py-3 ">
+              <input type="text" name="" id="searchInput" class="form-control w-100 mx-auto mb-3 border rounded-5 p-2 " placeholder="Find my location">  
+    
+            </div>
+          </div>
+        <div class="row g-3">
+            <!-- first day -->
+            <div class="col-lg-4  ">
+                <div class="inner-item h-100 bg-dark text-white">
+                    <div class="headerWeather d-flex justify-content-between  px-3 bg-danger pt-1">
+                        <p id="today"></p>
+                        <p id="todayDate"></p>
+                    </div>
+                    <div class="todayWeather  py-1">
+                        <h6 id="location" class="p-2"></h6>
+                    <div class=" d-flex justify-content-between p-2">
+                        <h2  id="degreeToday" class="num  "></h2>
+                        <img id="todayIcon"  width="90"/>
+                        
+                    </div>
+                    <p id="todayLine" class="text-info p-2"></p>
+                    <div class="footer px-1 d-flex justify-content-around text-secondary">
+                        <div>
+                            <i class="fas  fa-umbrella pr-1"></i>
+                            <span id="umbrella"><span>%</span></span>
+                        </div>
+                        <div>
+                            <i class="fas  fa-wind pl-3 pr-1"></i>
+                            <span id="wind"><span>km/hr</span></span>
+                        </div>
+
+                      <div>
+                        <i class="far  fa-compass pl-3 pr-1"></i>
+                        <span id="compass"></span>
+                      </div>
+
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <!-- second day -->
+            <div class="col-lg-4 ">
+                <div class="inner-item h-100 bg-dark text-white">
+                    <div class="headerWeather text-center bg-danger">
+                        <p class="secondDay pt-1"> </p>
+                    </div>
+                    <div class="todayWeather  py-3 text-center">
+                        <img class="secondDayIcon d-block m-auto">
+                        <h2 class="maxDegree d-inline-block pt-3"></h2>
+                        <p class="minDegree d-block pb-3"></p>
+                        <p class="secondDayLine text-info"></p>
+                    </div>
+
+                </div>
+            </div>
+            <!-- third day -->
+            <div class="col-lg-4 ">
+                <div class="inner-item h-100 bg-dark text-white">
+                    <div class="headerWeather text-center bg-danger">
+                        <p class="secondDay pt-1"></p>
+                    </div>
+                    <div class="todayWeather  py-3 text-center">
+                        <img class="secondDayIcon d-block m-auto">
+                        <h2 class="maxDegree d-inline-block pt-3 "></h2>
+                        <p class="minDegree d-block pb-3"></p>
+                        <p class="secondDayLine text-info"></p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+   </section>
+<!-- footer -->
+
+  <section id="footer" class="footer py-3 text-center text-white w-100 bg-dark container-fluid">
+    <div>
+      <div class=" w-50 m-auto">
+      <div class="input-group mb-3">
+        <input type="email" class="form-control" placeholder="name@example.com"  aria-describedby="button-addon2">
+        <button class="btn btn-outline-secondary" type="button" id="button-addon2">Subscribe</button>
+      </div>
+    </div>
+    <div>
+      <h5 class="fs-6 d-inline-block">© Copyright 2022. All rights reserved <span class="text-warning">|</span>  This template is made by <span class="  fs-5 text-warning" >Hazem Elhelbawi</span> </h5>
+
+    </div>
+
+
+    </div>
+    
+    
+  </section>  
+    
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
